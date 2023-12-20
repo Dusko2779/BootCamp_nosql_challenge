@@ -19,6 +19,9 @@ List the collection(s) in the database to ensure that establishments is there.
 Find and display one document in the establishments collection using find_one and display with pprint.
 Assign the establishments collection to a variable to prepare the collection for use.
 
+![image](https://github.com/Dusko2779/BootCamp_nosql_challenge/assets/134830906/1a6af571-0460-4132-8827-f3eb0ac0d6d9)
+
+
 ### Part 2: Update the Database
 Use NoSQL_setup_starter.ipynb for this section of the challenge.
 
@@ -54,6 +57,10 @@ An exciting new halal restaurant just opened in Greenwich, but hasn't been rated
     "Distance":4623.9723280747176,
     "NewRatingPending":True
 }
+
+![image](https://github.com/Dusko2779/BootCamp_nosql_challenge/assets/134830906/1274b9f0-4907-43ee-9db6-3fbd59d91a9f)
+
+
 Find the BusinessTypeID for "Restaurant/Cafe/Canteen" and return only the BusinessTypeID and BusinessType fields.
 
 Update the new restaurant with the BusinessTypeID you found.
@@ -64,7 +71,8 @@ Some of the number values are stored as strings, when they should be stored as n
 
 Use update_many to convert latitude and longitude to decimal numbers.
 Use update_many to convert RatingValue to integer numbers.
-Part 3: Exploratory Analysis
+
+### Part 3: Exploratory Analysis
 Eat Safe, Love has specific questions they want you to answer, which will help them find the locations they wish to visit and avoid.
 
 Use NoSQL_analysis_starter.ipynb for this section of the challenge.
@@ -88,11 +96,20 @@ Convert the result to a Pandas DataFrame, print the number of rows in the DataFr
 
 Which establishments have a hygiene score equal to 20?
 
+![image](https://github.com/Dusko2779/BootCamp_nosql_challenge/assets/134830906/b37e4d79-a772-420e-abdf-a4947d53e06e)
+
+
 Which establishments in London have a RatingValue greater than or equal to 4?
+
+![image](https://github.com/Dusko2779/BootCamp_nosql_challenge/assets/134830906/e368dc87-318c-41f5-b908-6364391802e7)
+
 
 Hint: The London Local Authority has a longer name than "London" so you will need to use $regex as part of your search.
 
 What are the top 5 establishments with a RatingValue of 5, sorted by lowest hygiene score, nearest to the new restaurant added, "Penang Flavours"?
+
+![image](https://github.com/Dusko2779/BootCamp_nosql_challenge/assets/134830906/0ba6070e-707f-4ed2-a8ee-68e1966168fc)
+
 
 Hint: You will need to compare the geocode to find the nearest locations. Search within 0.01 degree on either side of the latitude and longitude.
 
